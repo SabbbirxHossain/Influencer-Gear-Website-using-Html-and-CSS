@@ -7,6 +7,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+.sectionWidth{
+  max-width: 1024px;
+  margin: 150px auto;
+}
+
 header{
   max-width: 1280px;
   margin: 0 auto;
@@ -67,6 +72,11 @@ font-weight: 600;
 margin: 20px 0px;
 }
 
+.banner-bg{
+  background-image: url(images/Circle\ design.svg);
+  background-position: center;
+}
+
 .btn-primary{
   color: rgb(255, 255, 255);
   font-size: 16px;
@@ -77,3 +87,162 @@ margin: 20px 0px;
   padding: 10px 24px;
 }
 
+.display{
+  display: none;
+}
+
+
+/* Sponsors */
+.sponsors{
+  max-width: 1024px;
+  margin: 150px auto;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+
+/* Card Collection
+ */
+
+.card{
+  max-width: 330px;
+  padding: 10px 14px;
+  box-shadow: 0 4px 40px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.card-collections{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+.card-heading{
+color: rgb(58, 58, 58);
+font-size: 28px;
+font-weight: 600;
+text-align: center;
+margin: 30px 0px;
+}
+
+.card-title{
+color: rgb(24, 25, 31);
+font-family: Poppins;
+font-size: 1.8rem;
+font-weight: 500;
+}
+
+.card-price{
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card-des{
+  color: rgb(120, 120, 133);
+  font-size: 14px;
+  font-weight: 700;
+  
+}
+
+.Card-collection a{
+color: rgba(224, 44, 109, 0.87);
+font-size: 16px;
+font-weight: 700;
+display: flex;
+justify-content: end;
+margin-top: 30px;
+}
+
+
+/* features section  */
+.features{
+  display: flex;
+  justify-content: space-between;
+}
+.feature-content{
+  max-width: 610px;
+  margin-left: 100px;
+}
+
+.feature-title{
+color: rgb(10, 8, 38);
+font-size: 38px;
+font-weight: 700;
+}
+
+.feature-des{
+color: rgb(108, 108, 108);
+font-size: 16px;
+font-weight: 700;
+margin: 20px 0px;
+}
+
+/* footer  */
+
+footer{
+  width: 100%;
+  background-color: rgb(10, 8, 38);
+  color: white;
+  padding: 100px;
+}
+
+.f-title{
+color: rgb(255, 255, 255);
+font-size: 50px;
+font-weight: 700;
+}
+
+.f-content p{
+color: rgb(217, 219, 225);
+font-size: 14px;
+font-weight: 700;
+text-align: center;
+}
+
+.f-icon{
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ margin-top: 20px;
+}
+
+
+
+/* Mobile Responsive by media query  */
+
+@media screen and (max-width:576px) {
+  .navbar{
+    display: none;
+  }
+
+
+  /* Banner  */
+  #banner-1{
+    display: none;
+  }
+
+  #banner-2{
+    display: contents;
+  }
+
+  .banner-bg{
+    background-repeat: no-repeat;
+    margin-left: 30px;
+  }
+  .banner{
+    flex-direction: column;
+  }
+
+  .banner-content{
+    max-width: 420px;
+    margin: 10px auto;
+  }
+
+.sponsors{
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  justify-items: center;
+  
+}
+
+}
